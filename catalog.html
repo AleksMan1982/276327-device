@@ -6,19 +6,33 @@
 	<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
+	
 	<header class="main-header">
-		<a class="header-logo">Device-catal</a>
+		<a class="header-logo">Device</a>
 		<input type="search" placeholder="Поиск по сайту">
 		<ul class="user-navigation">
-			<li><a href="#">Пользователь</a></li>                 <!-- Как сверстать имя пользователя -->
-			<li><a href="#">Выйти</a></li>
+			<li><a href="#"><img src="img/user.svg" alt="Пользователь">Войти</a></li>
 		</ul>
 		<ul class="choice">
-			<li><a href="#">Сравнить</a></li>
-			<li><a href="#">Купить</a></li>
+			<li><a href="#"><img src="img/compare.svg" alt="Сравнение">Сравнить</a></li>
+			<li><a href="#"><img src="img/cart.svg" alt="Пользователь">Корзина</a></li>
 		</ul>
 		<nav class="main-navigation">
-			<a href="#">Каталог товаров</a>
+			
+			<div class="catalog">
+				<a href="#">Каталог товаров
+					<img src="img/plus.png" alt="развернуть">
+				</a>
+				<ul class="modal modal-category">
+					<li><a href="#">Виртуальная реальность</a></li>
+					<li><a href="#">Фитнесс-браслеты</a></li>
+					<li><a href="#">Квадрокоптеры</a></li>
+					<li><a href="#">Моноподы для селфи</a></li>
+					<li><a href="#">Умные часы</a></li>
+					<li><a href="#">Экшн-камеры</a></li>
+				</ul>
+			</div>
+			
 			<ul class="site-navigation">
 				<li><a href="#">Доставка</a></li>
 				<li><a href="#">Гарантия</a></li>
@@ -26,6 +40,7 @@
 			<a href="#">Контакты</a>
 		</nav>
 	</header>
+	
 	<main>
 		<h1>Моноподы для селфи</h1>
 		<section class="pointer">
@@ -46,22 +61,22 @@
 				<li><button class="button">По типу</button></li>
 				<li><button class="button">По популярности</button></li>
 			</ul>
-			<img src="http://placehold.it/360x380" alt="Любительская селфи-палка">
+			<img src="img/item-1.jpg" alt="Любительская селфи-палка">
 			<dl>
 				<dt>Любительская селфи-палка</dt>
 				<dd>500 руб.</dd>
 			</dl>
-			<img src="http://placehold.it/360x380" alt="Профессиональная селфи-палка">
+			<img src="img/item-2.jpg" alt="Профессиональная селфи-палка">
 			<dl>
 				<dt>Профессиональная селфи-палка</dt>
 				<dd>1 500 руб.</dd>
 			</dl>
-			<img src="http://placehold.it/360x380" alt="Непотопляемая селфи-палка">
+			<img src="img/item-3.jpg" alt="Непотопляемая селфи-палка">
 			<dl>
 				<dt>Любительская селфи-палка</dt>
 				<dd>2 500 руб.</dd>
 			</dl>
-			<img src="http://placehold.it/360x380" alt="Селфи-палка «Следуй за мной»">
+			<img src="img/item-4.jpg" alt="Селфи-палка «Следуй за мной»">
 			<dl>
 				<dt>Селфи-палка «Следуй за мной»</dt>
 				<dd>4 900 руб.</dd>
@@ -74,26 +89,43 @@
 			</ul>
 			<a class="button" href="#">Вперед</a>
 		</section>
-		<footer class="main-footer">
-			<a class="footer-logo">Device</a>
-			<ul class="footer-navigation">					<li><a href="#">Войти</a></li>
-				<li><a href="#">Сравнть</a></li>
-				<li><a href="#">Корзина</a></li>
-			</ul>
-			<p>г. Москва, ул.Строителей,15</p>
-			<ul class="site-navigation">
-				<li><a href="#">Доставка</a></li>
-				<li><a href="#">Гарантия</a></li>
-				<li><a href="#">Контакты</a></li>
-			</ul>
-			<p>Тел.:+7(495)495-95-95</p>
-			<ul class="footer-social">
-				<li><a href="#">Фейсбук</a></li>
-				<li><a href="#">Инстаграм</a></li>
-				<li><a href="#">Твиттер</a></li>
-			</ul>
-			<a href="htmlacademy.ru"><img src="http://placehold.it/35x45" alt="HTML Academy"></a>
-		</footer>	
+	
+	<footer class="main-footer">
+		<a class="footer-logo">Device</a>
+		<ul class="footer-navigation">
+			<li><a href="#"><img src="img/user.svg" alt="Пользователь">Войти</a></li>
+			<li><a href="#"><img src="img/compare.svg" alt="Сравнение">Сравнить</a></li>
+			<li><a href="#"><img src="img/cart.svg" alt="Корзина">Купить</a></li>	
+		</ul>
+		<p>г. Москва, ул.Строителей,15</p>
+		<ul class="site-navigation">
+			<li><a href="#">Доставка</a></li>
+			<li><a href="#">Гарантия</a></li>
+			<li><a href="#">Контакты</a></li>
+		</ul>
+		<p>Тел.:+7(495)495-95-95</p>
+		<ul class="footer-social">
+			<li>
+				<a href="#">
+					<img src="img/fb.svg" alt="fb-logo">
+					<span class="visually-hidden">Фейсбук</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="img/instagram.svg" alt="instagram-logo">
+					<span class="visually-hidden">Инстаграм</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="img/twiter.svg" alt="twiter-logo">
+					<span class="visually-hidden">Твитер</span>
+				</a>
+			</li>
+		</ul>
+		<a href="htmlacademy.ru"><img src="img/logo-html.svg" alt="HTML Academy"></a>
+	</footer>
 		
 	</main>
 </body>

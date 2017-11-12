@@ -3,23 +3,25 @@
 <head>
     <meta charset="utf-8">
     <title>Device</title>
-	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
 	<header class="main-header">
 		<a class="header-logo">Device</a>
 		<input type="search" placeholder="Поиск по сайту">
 		<ul class="user-navigation">
-			<li><a href="#">Войти</a></li>
+			<li><a href="#"><img src="img/user.svg" alt="Пользователь">Войти</a></li>
 		</ul>
 		<ul class="choice">
-			<li><a href="#">Сравнить</a></li>
-			<li><a href="#">Купить</a></li>
+			<li><a href="#"><img src="img/compare.svg" alt="Сравнение">Сравнить</a></li>
+			<li><a href="#"><img src="img/cart.svg" alt="Пользователь">Корзина</a></li>
 		</ul>
 		<nav class="main-navigation">
 			
 			<div class="catalog">
-			<a href="#">Каталог товаров</a>
+				<a href="#">Каталог товаров
+					<img src="img/plus.png" alt="развернуть">
+				</a>
 				<ul class="modal modal-category">
 					<li><a href="#">Виртуальная реальность</a></li>
 					<li><a href="#">Фитнесс-браслеты</a></li>
@@ -41,7 +43,8 @@
 		<h1>Главная страница</h1>
 			
 		<section class="popular-slider">
-			<img src="http://placehold.it/150x100" alt="Монопод">
+			<img src="img/slider-1.png" alt="Монопод">
+			<img src="img/01.png" alt="01">
 			<h2>Делай селфи, как Бен Стиллер!</h2>
 			<p>Самая длинная палка доступная в нашем магазине. 
 			   Восемь (Восемь, Карл!) метров длиной и веслм всего 5 килограмм.</p>
@@ -61,7 +64,8 @@
 		</section>
 			
 		<section class="popular-slider">
-			<img src="http://placehold.it/150x100" alt="Фитнесс-браслет">
+			<img src="img/slider-2.png" alt="Фитнесс-браслет">
+			<img src="img/02.png" alt="02">
 			<h2>Худеем правильно!</h2>
 			<p>Мотивирующие фитнесс-браслеты помогут найти в себе силы
 			   не пропускать занятия и соблюдать диету</p>
@@ -77,7 +81,8 @@
 		</section>
 		
 		<section class="popular-slider">
-			<img src="http://placehold.it/150x100" alt="Квадрокоптер">
+			<img src="img/slider-3.png" alt="Квадрокоптер">
+			<img src="img/03.png" alt="03">
 			<h2>Порхает, как бабочка, жалит, как пчела!</h2>
 			<p>Этот обычный, на первый взгляд, квадрокоптер оснащен 
 			   мощным лазером, замаскированным под стандартную камеру</p>
@@ -97,40 +102,52 @@
 		<section class="catalog">
 			<ul class="catalog-items">
 				<li>
-					<figure>
-						<img src="http://placehold.it/160x160" alt="Виртуальная реальность">
-						<figcaption>Виртуальная реальность</figcaption>
-					</figure>
+					<a href="#">
+						<figure>
+							<img src="img/popular-1.svg" alt="Виртуальная реальность">
+							<figcaption>Виртуальная реальность</figcaption>
+						</figure>
+					</a>
 				</li>
 				<li>
-					<figure>
-						<img src="http://placehold.it/160x160" alt="Монопод">
-						<figcaption>Моноподы для селфи</figcaption>
-					</figure>
+					<a href="#">
+						<figure>
+							<img src="img/popular-2.svg" alt="Моноподы для селфи">
+							<figcaption>Моноподы для селфи</figcaption>
+						</figure>
+					</a>
 				</li>
 				<li>
-					<figure>
-						<img src="http://placehold.it/160x160" alt="Экшн-камера">
-						<figcaption>Экшн-камеры</figcaption>
-					</figure>
+					<a href="#">
+						<figure>
+							<img src="img/popular-3.svg" alt="Экшн-камера">
+							<figcaption>Экшн-камеры</figcaption>
+						</figure>
+					</a>
 				</li>
 				<li>
-					<figure>
-						<img src="http://placehold.it/160x160" alt="Фитнесс-браслет">
-						<figcaption>Фитесс-браслеты</figcaption>
-					</figure>
+					<a href="#">
+						<figure>
+							<img src="img/popular-4.svg" alt="Фитнесс-браслет">
+							<figcaption>Фитесс-браслеты</figcaption>
+						</figure>
+					</a>
 				</li>
 				<li>
-					<figure>
-						<img src="http://placehold.it/160x160" alt="Умные часы">
-						<figcaption>Умные часы</figcaption>
-					</figure>
+					<a href="#">
+						<figure>
+							<img src="img/popular-5.svg" alt="Умные часы">
+							<figcaption>Умные часы</figcaption>
+						</figure>
+					</a>
 				</li>
 				<li>
-					<figure>
-						<img src="http://placehold.it/160x160" alt="Квадрокоптер">
-						<figcaption>Квадрокоптеры</figcaption>
-					</figure>
+					<a href="#">
+						<figure>
+							<img src="img/popular-6.svg" alt="Квадрокоптер">
+							<figcaption>Квадрокоптеры</figcaption>
+						</figure>
+					</a>
 				</li>
 			</ul>
 		</section>
@@ -143,23 +160,38 @@
 					<li><button class="button">Кредит</button></li>
 				</ul>
 			</div>
-		
+				
 		<h2>Доставка</h2>
+		<img src="img/delivery.svg">
 		<p>Мы с удовольствием доставим товар прямо к вашему
 		   подъезду совершенно бесплатно! Ведь мы неплохо
 		   заработаем, поднимая его на ваш этаж.</p>
 			   
 		<h2>Гарантия</h2>
+		<img src="img/warranty.svg">
 		<p>Если из-за возгорания купленного у нас товара у вас сгорит
 		   дом — не переживайте, мы выдадим вам новый.
 		   Товар, не дом, конечно же.</p>
 				   
 		<h2>Кредит</h2>
+		<img src="img/credit.svg">
 		<p>Залезть в долговую яму теперь стало проще! Кредитные 
 		   консультанты подберут для вас наиболее выгодные
 		   условия кредита. Выгодные для нашего банка, разумеется.</p>
-			
+					
 		</section>
+		
+		<section class="partners">
+			<ul>
+				<li><img src="img/logo-1.png" alt="dji"></li>
+				<li><img src="img/logo-2.png" alt="sp-gadgets"></li>
+				<li><img src="img/logo-3.png" alt="go-pro"></li>
+				<li><img src="img/logo-4.png" alt="vive"></li>
+			</ul>
+					
+					
+		</section>
+		
 		<section class="info">
 			<h2>О нас</h2>
 			<p>Огромный выбор гаджетов не оставит равнодушным гика, 
@@ -178,16 +210,16 @@
 			<h2>Контакты</h2>
 			<p>Вы можете забрать этот товар сами, заехав в наш офис. За одно, вы сможете
 			   проверить работоспособность покупки. Всякое бывает.</p>
-			<img src="http://placehold.it/560x220" alt="Карта">
+			<img src="img/map.png" alt="Карта">
 			<a href="#">Напишите нам</a>
 		</section>
 	</main>	
 	<footer class="main-footer">
 		<a class="footer-logo">Device</a>
 		<ul class="footer-navigation">
-			<li><a href="#">Войти</a></li>
-			<li><a href="#">Сравнить</a></li>
-			<li><a href="#">Корзина</a></li>
+			<li><a href="#"><img src="img/user.svg" alt="Пользователь">Войти</a></li>
+			<li><a href="#"><img src="img/compare.svg" alt="Сравнение">Сравнить</a></li>
+			<li><a href="#"><img src="img/cart.svg" alt="Корзина">Купить</a></li>	
 		</ul>
 		<p>г. Москва, ул.Строителей,15</p>
 		<ul class="site-navigation">
@@ -197,22 +229,50 @@
 		</ul>
 		<p>Тел.:+7(495)495-95-95</p>
 		<ul class="footer-social">
-			<li><a href="#">Фейсбук</a></li>
-			<li><a href="#">Инстаграм</a></li>
-			<li><a href="#">Твиттер</a></li>
+			<li>
+				<a href="#">
+					<img src="img/fb.svg" alt="fb-logo">
+					<span class="visually-hidden">Фейсбук</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="img/instagram.svg" alt="instagram-logo">
+					<span class="visually-hidden">Инстаграм</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="img/twiter.svg" alt="twiter-logo">
+					<span class="visually-hidden">Твитер</span>
+				</a>
+			</li>
 		</ul>
-		<a href="htmlacademy.ru"><img src="http://placehold.it/35x45" alt="HTML Academy"></a>
+		<a href="htmlacademy.ru"><img src="img/logo-html.svg" alt="HTML Academy"></a>
 	</footer>
 		
 	<section class="modal modal-log">
 		<h2 class="visually-hidden">Личный кабинет</h2>
-		<!-- Здесь будет форма -->
-		<span class="modal-close">x</span>
+				
+		<form  class="login" action="https://echo.htmlacademy.ru">
+			<label>Ваше имя:
+				<input name="user" type="text" placeholder="Представьтесь, пожалуйста">
+			</label>
+			<label>Ваш e-mail:
+				<input name="e-mail" type="text" placeholder="Для отправки ответа">
+			</label>
+			<label>Текст письма:
+				<textarea name="message" placeholder="В свободной форме" rows="8" cols="100"></textarea>
+			</label>
+			<input name="send" type="submit" value="Отправить">
+		</form>
+				
+		<button class="modal-close">Закрыть</button>
 	</section>
 		
 	<section class="modal modal-map">
 		<h2 class="visually-hidden">Как до нас добраться</h2>
-		<span class="modal-close">x</span>
+		<button class="modal-close">Закрыть</button>
 	</section>
 </body>
 </html>
