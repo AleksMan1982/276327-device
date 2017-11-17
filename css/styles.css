@@ -28,3 +28,14 @@ a {
 	font-size: 15px;
 	line-height: 36px;	
 }
+
+.main-navigation > ul > li > a {
+	text-transform: uppercase;
+}
+
+.modal-category a {
+	font-family: "Open Sans", sans-sefif;
+	line-height: 36px;
+	font-size: 15px;
+	
+}
