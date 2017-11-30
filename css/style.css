@@ -11,7 +11,7 @@
     font-family: 'gilroylight';
     src: url('../fonts/gilroy-light-webfont.woff2') format('woff2'),
          url('gilroy-light-webfont.woff') format('woff');
-    font-weight: normal;
+    font-weight: 300;
     font-style: normal;
 }
 
@@ -60,6 +60,7 @@ a {
 .main-header .header-logo {
 	font-family: "Gilroy", "Arial Black", "Franklin Gothic Medium", sans-serif;
 	font-size: 48px;
+	letter-spacing: 0.01em;
 	color: #000;
 	text-transform: uppercase;
 	position: absolute;
@@ -93,6 +94,7 @@ a {
 	border: none;
 	color: rgba(0, 0, 0, 0.3);
 	font-size: 15px;
+	letter-spacing: 0.01em;
 	background-color: #f7e296; 
 }
 
@@ -143,6 +145,7 @@ a {
 .main-navigation > a {
 	font-family: "Gilroy", "Arial Black", "Franklin Gothic Medium", sans-serif;
 	font-size: 18px;
+	letter-spacing: 0.2em;
 	color: #000;
 	text-transform: uppercase;
 }
@@ -191,7 +194,7 @@ a {
 .popular-right h2 {
 	font-family: "Gilroy", "Arial Black", "Franklin Gothic Medium", sans-serif;
 	font-size: 47px;
-	line-height: 55px;
+	line-height: 1em;
 	color: #000;
 	margin-bottom: 40px;
 }
@@ -521,23 +524,6 @@ main > .popular-slider:nth-of-type(3) {
 	color: #ffffff;
 }
 
-.catalog-column {
-	margin-top: 0;
-	display: inline-block;
-	
-	
-}
-
-.catalog-filter {
-	width: 468px;
-	
-}
-
-.catalog-results {
-	width: 972px;
-	
-}
-
 .catalog-top {
 	min-height: 180px;
 	padding-left: 200px;
@@ -549,56 +535,85 @@ main > .popular-slider:nth-of-type(3) {
 	color: #000;
 }
 
-.catalog-filter {
-	float: left;
-	margin-top: 0px;
-}
-
-.head-catalog {
-	min-height: 70px;
-	background-color: #dcdcdc;
-}
-
-
-
-.choice-catalog {
-	min-height: 70px;
-	background-color: #ebebeb;
-}
-
-.choice-catalog h2 {
-	display: inline-block;
-}
-
-.choice-catalog ul {
-	display: inline-block;
-}
-
-.choice-catalog li {
-	display: inline-block;
-}
-
-.catalog-column h2 {
-	font-family: "Gilroy", "Arial Black", "Franklin Gothic Medium", sans-serif;
-	font-size: 16px;
-	text-transform: uppercase;
-	letter-spacing: 4px;
-	vertical-align: middle;
-	text-align: center;
-	margin-top: 0;
-}	
-
 .catalog-item {
 	display: inline-block;
 	margin-right: 40px;
 }
 
-.gallery {
-	padding: 72px;
+.search-catalog {
+	display: flex;
+	flex-direction: row;
+	
+}
+	
+.choice-catalog {
+	width: 468px;
+	display: flex;
+	flex-direction: column;
 }
 
+.results-catalog {
+	width: 972px;
+	display: flex;
+	flex-direction: column;
 	
+}
 
+.head-catalog {
+	min-height: 70px;
+	background-color: #dbdbdb;
+}
+
+.filter-catalog {
+	background-color: #eeeeee;
+	min-height: 1218px;
+}
+
+.ranking-catalog {
+	min-height: 70px;
+	width: 972px;
+	background-color: #ebebeb;
+	align-self: stretch;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.ranking-catalog li {
+	display: inline-block;
+}
+
+.gallery {
+	padding-left: 70px;
+	padding-top: 70px;
+}
+
+.pager {
+	width: 760px;
+	height: 70px;
+	background-color: #ebebeb;
+	align-self: flex-start;
+	margin-left: 72px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	
+}
+
+.pager li {
+	display: inline-block;	
+}
+
+.catalog-item  dt{
+	font-family: "Gilroy", "Arial Black", "Franklin Gothic Medium", sans-serif;
+	font-size: 18px;
+}
+
+.catalog-item dd{
+	font-family: gilroylight;
+	font-size: 16px;
+}
 
 
 
