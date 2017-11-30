@@ -19,10 +19,26 @@ body {
 	width: 1160px;
 	padding: 40px 140px 0 140px;
 	font-family: "Open Sans", "Arial Narrow", Calibri, sans-serif;
+	font-weight: 400;
 	font-size: 15px;
 	color: #464646;
 	line-height: 30px;
 	
+}
+
+.catalog-page {
+	padding: 40px 0;
+	width: 1440px;
+}
+
+.catalog-page .main-header {
+	width: 1160px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.visually-hidden {
+	display: none;
 }
 
 ul {
@@ -249,10 +265,22 @@ main > .popular-slider:nth-of-type(3) {
 	
 }
 
+.catalog-items div:hover {
+	background-color: #f0c52e;
+}
+
+.catalog-items img:active {
+	opacity: 0.3;
+}
+
 .catalog-items p {
 	font-family: "Gilroy", "Arial Black", "Franklin Gothic Medium", sans-serif;
 	font-size: 18px;
 	color: #000;
+}
+
+.catalog-items p:active {
+	opacity: 0.3;
 }
 
 .services {
@@ -493,7 +521,84 @@ main > .popular-slider:nth-of-type(3) {
 	color: #ffffff;
 }
 
-.virtually-hidden {
-	display: none;
+.catalog-column {
+	margin-top: 0;
+	display: inline-block;
+	
+	
 }
+
+.catalog-filter {
+	width: 468px;
+	
+}
+
+.catalog-results {
+	width: 972px;
+	
+}
+
+.catalog-top {
+	min-height: 180px;
+	padding-left: 200px;
+}
+
+.catalog-top h1 {
+	font-size: 47px;
+	font-family: "Gilroy", "Arial Black", "Franklin Gothic Medium", sans-serif;
+	color: #000;
+}
+
+.catalog-filter {
+	float: left;
+	margin-top: 0px;
+}
+
+.head-catalog {
+	min-height: 70px;
+	background-color: #dcdcdc;
+}
+
+
+
+.choice-catalog {
+	min-height: 70px;
+	background-color: #ebebeb;
+}
+
+.choice-catalog h2 {
+	display: inline-block;
+}
+
+.choice-catalog ul {
+	display: inline-block;
+}
+
+.choice-catalog li {
+	display: inline-block;
+}
+
+.catalog-column h2 {
+	font-family: "Gilroy", "Arial Black", "Franklin Gothic Medium", sans-serif;
+	font-size: 16px;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	vertical-align: middle;
+	text-align: center;
+	margin-top: 0;
+}	
+
+.catalog-item {
+	display: inline-block;
+	margin-right: 40px;
+}
+
+.gallery {
+	padding: 72px;
+}
+
+	
+
+
+
 
