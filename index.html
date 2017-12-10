@@ -5,54 +5,64 @@
     <title>Device</title>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/style2.css">
 </head>
 <body>
 	
 	
 	<header class="main-header">
 		<a class="header-logo" href="#">Device</a>
+		
 		<section class="header-top">
 			<form class="search" method="post">
-				<input type="search" name="search" placeholder="Поиск по сайту">
+				<input type="search" name="search" placeholder="       Поиск по сайту" class="search">
 				<input type="submit" name="btn" value="Найти">
 			</form>
 			<ul class="user-navigation login">
-				<li><a href="#"><img src="img/user.svg" alt="Пользователь">Войти</a></li>
+				<li><a href="#">Войти</a></li>
 			</ul>
 			<ul class="user-navigation choice">
-				<li><a href="#"><img src="img/compare.svg" alt="Сравнение">Сравнить</a></li>
-				<li><a href="#"><img src="img/cart.svg" alt="Пользователь">Корзина</a></li>
+				<li><a href="#">Сравнить</a></li>
+				<li><a href="#">Корзина</a></li>
 			</ul>
 		</section>
 		
 		<nav class="main-navigation">
-			<a class="catalog-link" href="#">Каталог товаров
-				
+		<ul>
+			<li><a class="catalog-link" href="#">Каталог товаров
 			</a>
-			<ul class="modal modal-category" id="exp">
-				<li><a href="#">Виртуальная реальность</a></li>
-				<li><a href="#">Фитнесс-браслеты</a></li>
+			<ul class="modal-category" id="exp">
+				<li>
+					<ul>
+						<li><a href="#">Виртуальная реальность</a></li>
+						<li><a href="#">Моноподы для селфи</a></li>
+						<li><a href="#">Экшн-камеры</a></li>
+					</ul>	
+				</li>	
+				<li>
+					<ul>
+						<li><a href="#">Фитнесс-браслеты</a></li>
+						<li><a href="#">Умные часы</a></li>
+					</ul>
+				</li>	
 				<li><a href="#">Квадрокоптеры</a></li>
-				<li><a href="#">Моноподы для селфи</a></li>
-				<li><a href="#">Умные часы</a></li>
-				<li><a href="#">Экшн-камеры</a></li>
 			</ul>
-			
-			<a href="#">Доставка</a>
-			<a href="#">Гарантия</a>
-			<a href="#">Контакты</a>
+			</li>
+			<li><a href="#">Доставка</a></li>
+			<li><a href="#">Гарантия</a></li>
+			<li><a href="#">Контакты</a></li>
+			</ul>
 		</nav>
 	</header>
 	<main>
 		<h1 class="visually-hidden">Главная страница</h1>
-			
 		<section class="popular-slider">
-			<img class="number" src="img/01.png" alt="01">
+			
 			<div class="popular-gallery">
 				<img class="photo" src="img/slider-1.png" alt="Монопод" width="384" height="486">
 			</div>	
 			<div class="popular-right">	
+				<img class="number" src="img/01.png" alt="01" width="166" height="31">	
 				<h2>Делай селфи,<br> как Бен Стиллер!</h2>
 				<p>Самая длинная палка доступная в нашем магазине.<br> 
 				   Восемь (Восемь, Карл!) метров длиной и веслм всего 5 килограмм.</p>

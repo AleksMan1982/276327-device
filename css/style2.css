@@ -16,6 +16,8 @@
 }
 
 body {
+	margin-left: auto;
+	margin-right: auto;
 	width: 1440px;
 	padding-top: 40px;
 	font-family: "Open Sans", "Arial Narrow", Calibri, sans-serif;
@@ -23,8 +25,7 @@ body {
 	font-size: 15px;
 	color: #464646;
 	line-height: 30px;
-	margin-left:auto;
-	margin-right:auto;
+	
 }
 
 .catalog-page {
@@ -53,7 +54,6 @@ ul {
 a {
 	text-decoration: none;
 	color: #464646;
-	margin-right: 0px;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -84,6 +84,11 @@ input[type="radio"].visually-hidden {
 	width: 1040px;
 	margin-left: auto;
 	margin-right: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	position: relative;
+	
 }
 
 .main-header .header-logo {
@@ -93,7 +98,8 @@ input[type="radio"].visually-hidden {
 	color: #000;
 	text-transform: uppercase;
 	position: absolute;
-	top: 30px;
+	top: -15px;
+	left: 58px;
 }
 
 
@@ -109,9 +115,9 @@ input[type="radio"].visually-hidden {
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
-	align-items: flex-start;
-	margin-top: 0px;
-	/* margin-bottom: 26px; */
+	align-items: center;
+	margin-top: -7px;
+	margin-bottom: 27px;
 	height: 50px;
 }
 
@@ -127,7 +133,9 @@ input[type="radio"].visually-hidden {
 	font-size: 15px;
 	letter-spacing: 0.01em;
 	background-color: #f7e296;
-	margin-top: 5px;
+	background-image: url("../img/search.png");
+	background-repeat: no-repeat;
+	background-position: 2px 16px;
 }
 
 .header-top input[type="search"]:hover {
@@ -161,34 +169,77 @@ input[type="radio"].visually-hidden {
 	
 }
 
+.login {
+	margin-left: 126px;
+}
+
+.user-navigation li {
+	position: relative;
+}
+
+.user-navigation a::before {
+	content: "";
+	position: absolute;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	width: 12px;
+	height: 12px;
+	
+}
+
+.login a::before {
+	background-image: url("../img/user.svg");
+	top: 8px;
+	left: -24px;
+}
+
+
 .choice {
-	margin-left: 134px;
+	margin-left: 237px;
+}
+
+
+.choice li:first-child a::before {
+	background-image: url("../img/compare.svg");
+	top: 10px;
+	left: -20px;
+	
 }
 
 .choice li:last-child {
-	margin-left: 30px;
+	margin-left: 55px;
 }
 
-.main-navigation {
+.choice li:last-child a::before {
+	background-image: url("../img/cart.svg");
+	top: 7px;
+	left: -19px;
+}
+
+.main-navigation>ul {
 	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-	margin-top: 0;
-	flex-wrap: wrap;
 	margin-top: 0px;
+	position: relative;
+}
+.main-navigation>ul>li:first-child {
+	flex-grow:1;
+}
+.main-navigation>ul>li:last-child {
+	margin-right:-4px;
+}
+.main-navigation>ul>li:first-child:hover .modal-category{
+	display:flex;
 }
 
 .main-navigation a:first-of-type {
-	/* margin-right: 270px; */
-	flex-grow: 1;
 }
 
-.main-navigation a:nth-of-type(2) {
+.main-navigation li:nth-of-type(2) {
 	margin-right: 35px;
 }
 
-.main-navigation a:nth-of-type(3) {
-	margin-right: 109px;
+.main-navigation li:nth-of-type(3) {
+	margin-right: 107px;
 }
 
 
@@ -214,76 +265,125 @@ input[type="radio"].visually-hidden {
 
 
 
-.main-navigation > a {
+.main-navigation>ul>li>a {
 	font-family: "Gilroy", "Arial Black", "Franklin Gothic Medium", sans-serif;
 	font-size: 18px;
 	letter-spacing: 0.2em;
 	color: #000;
 	text-transform: uppercase;
-	margin-right: -7px;
 }
 
 .main-navigation a img {
 	opacity: 0.3;
 }
 
-.popular-slider {
-	width: 1000px;
-	position: relative;
+.header-bottom {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	height: 480px;
+	position: relative;
+}
+
+.modal-category {
+	display: flex;
+	display: none;
+	position: absolute;
+	justify-content: space-between;
+	width: 1100px;
+	height: 137px;
+	padding-top: 20px;
+	z-index: 100;
+	background-color: #f7e296;
+}
+
+
+
+.modal-category>li:last-child {
+	margin-left: -5px;
+}
+
+.modal-category li ul li:first-child {
+	padding-bottom: 6px;
+}
+
+.modal-category li ul li:nth-of-type(2) {
+	padding-bottom: 6px;
+}
+
+.popular-slider {
+	width: 1160px;
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	height: 466px;
 	margin-left: auto;
-	margin-right: auto;	
-	padding-left: 80px;
-	padding-right: 80px;
+	margin-right: auto;
 }
 
 
 
 .popular-slider .photo {
 	position: relative;
-	top: -110px;
-	left: 15px;
+	top: -112px;
+	left: 8px;
 }
 
-.popular-slider .number {
+.number {
 	position: absolute;
-	top: -100px;
-	right: 60px;
+	right: 0;
+	top: 61px;
 }
 
-.popular-slider::after {
+
+.popular-gallery {
+	margin-left: 84px;
+	margin-right: 132px;
+}
+
+
+.popular-gallery::before {
 	content: "";
+	position: absolute;
 	width: 100px;
 	height: 7px;
 	background-color: #ffffff;
-	position: absolute;
-	top: -80px;
-	left: 560px;
+	top: -74px;
+	left: 600px;
 }
+
+
 
 .popular-right {
 	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
 	top: -72px;
-	left: -30px;
+	margin-left: 0px;
+}
+
+.popular-right img {
+	position: absolute;
+	top: -31px;
+	right: -11px;
 }
 
 .popular-right h2 {
 	font-family: "Gilroy", "Arial Black", "Franklin Gothic Medium", sans-serif;
 	font-size: 47px;
-	line-height: 53px;
+	line-height: 57px;
 	color: #000;
-	margin-bottom: 40px;
-	margin-left: 42px;
-	margin-top: 40px;
-	letter-spacing: 0.6px;
+	margin-bottom: 19px;
+	position: relative;
+	top: 0px;
+	left: 0px;
+	letter-spacing: 0.01em;
 }
 
 .popular-right p {
-	margin-top: 0;
-	margin-bottom: 60px;
+	margin-top: 0px;
+	margin-bottom: 49px;
 }
 
 .popular-right a {
@@ -293,9 +393,10 @@ input[type="radio"].visually-hidden {
 	text-transform: uppercase;
 	letter-spacing: 4px;
 	margin-top: 0px;
-	margin-left: 35px;
-	
+	margin-left: 42px;
 }
+
+
 
 .details::before {
 	content: "";
@@ -303,7 +404,7 @@ input[type="radio"].visually-hidden {
 	width: 220px;
 	height: 8px;
 	background-color: #f0c52e;
-	top: 303px;
+	top: 291px;
 	left: 0;
 	z-index: -1;
 }
@@ -311,7 +412,7 @@ input[type="radio"].visually-hidden {
 .details:hover::before {
 	width: 220px;
 	height: 40px;
-	top: 287px;
+	top: 273px;
 }
 
 .details:active {
@@ -319,19 +420,25 @@ input[type="radio"].visually-hidden {
 }
 
 .popular-right table {
-	margin-top: 70px;
+	margin-top: 62px;
 	text-align: left;
-	
 }
 
 .popular-right th {
 	font-family: "Gilroylight";
 	font-size: 36px;
 	color: black;
+	vertical-align: top;
+	height: 39px;
 }
 
-.popular-right td {
+td {
 	width: 160px;
+	letter-spacing: -1px;
+}
+
+.popular-right td:nth-child(2) {
+	width: 134px;
 }
 
 main > .popular-slider:nth-of-type(2),
@@ -492,15 +599,6 @@ main > .popular-slider:nth-of-type(3) {
 	top: 8px;
 	
 }
-
-
-
-
-
-
-
-
-
 
 .service-list a {
 	color: #000;
@@ -900,6 +998,3 @@ main > .popular-slider:nth-of-type(3) {
 	font-family: gilroylight;
 	font-size: 16px;
 }
-
-
-
